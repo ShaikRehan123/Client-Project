@@ -1,14 +1,16 @@
 import Head from 'next/head'
-import Header from "../components/Header";
 import HomeSlider from '../components/Home'
+import React, {useState} from "react";
+import Hamburger from "../components/Hamburger";
+
 
 export default function Home() {
+    const [isOpen , setOpen] = useState(false);
     return (
-        <div className='bg-gray-800 h-full'>
+        <div className='h-full'>
             <Head>
                 <title>Cadence Architects</title>
             </Head>
-            {/*<h1>Cadence Architects</h1>*/}
             <HomeSlider />
         </div>
     )

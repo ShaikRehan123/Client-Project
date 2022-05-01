@@ -1,4 +1,4 @@
-const Header = () => {
+const HeaderLogo = () => {
     return (
         <div className="flex justify-between cursor-pointer p-10">
             <div>
@@ -36,4 +36,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default HeaderLogo
