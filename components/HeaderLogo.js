@@ -1,10 +1,19 @@
-const HeaderLogo = () => {
+import {useRouter} from "next/router";
+
+const HeaderLogo = ({darkMode}) => {
+    const router = useRouter()
     return (
-        <div className="flex justify-between cursor-pointer p-10">
+        <div className="flex justify-between  p-10">
             <div>
                 <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1"
-                     id="Layer_1" x="0px" y="0px" width="177px" height="20px" viewBox="0 0 230 26" fill='white'
-                     enableBackground="new 0 0 230 26" xmlSpace="preserve">
+                     id="Layer_1" x="0px" y="0px" width="177px" height="20px" viewBox="0 0 230 26"
+                     fill={`${darkMode ? 'black' : 'white'}`}
+                     enableBackground="new 0 0 230 26" xmlSpace="preserve"
+                     onClick={() => {
+                         router.push('/')
+                     }}
+                     className='cursor-pointer'
+                >
                     <g>
                         <defs>
                             <polygon id="SVGID_1_"

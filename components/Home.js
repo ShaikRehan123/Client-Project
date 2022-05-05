@@ -3,8 +3,8 @@ import ImageSlideShow from "./ImageSlideShow";
 
 export default function App() {
     return (
-        <div className='relative'>
-            <Navbar />
+        <div>
+            <Navbar darkMode={false} />
             <ImageSlideShow />
         </div>
     );
