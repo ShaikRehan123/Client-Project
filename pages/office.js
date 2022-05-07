@@ -23,10 +23,10 @@ const Office = () => {
   const PublicationsRef = useRef(null);
   const EventsRef = useRef(null);
 
-
   return (
     <div>
-      <StickyNavbar darkMode={true} 
+      <StickyNavbar
+        darkMode={true}
         profileRef={ProfileRef}
         peopleRef={PeopleRef}
         awardsRef={AwardsRef}
@@ -34,22 +34,21 @@ const Office = () => {
         eventsRef={EventsRef}
         isOfficePage={true}
       />
-      <div className="w-[95%] m-auto pt-28 space-y-12 mb-4">
-        <div ref={ProfileRef}>
+      <div className="w-[90%] m-auto pt-28 space-y-12 mb-4 xl:w-[65%]">
+        <div ref={ProfileRef} className="pt-12">
           <ImageWithText
             text="Profile"
             imgElement={
               <img
                 data-wow-delay="0.1s"
                 data-sizes="auto"
-                data-srcset="https://i2.wp.com/cadencearchitects.com/wp-content/uploads/2021/08/IMG_1383-2-scaled.jpg?resize=600%2C365&amp;ssl=1 300w, https://i2.wp.com/cadencearchitects.com/wp-content/uploads/2021/08/IMG_1383-2-scaled.jpg?resize=600%2C365&amp;ssl=1 500w, https://i2.wp.com/cadencearchitects.com/wp-content/uploads/2021/08/IMG_1383-2-scaled.jpg?resize=750%2C456&amp;ssl=1 750w, https://i2.wp.com/cadencearchitects.com/wp-content/uploads/2021/08/IMG_1383-2-scaled.jpg?fit=909%2C608&amp;ssl=1 1000w, https://i2.wp.com/cadencearchitects.com/wp-content/uploads/2021/08/IMG_1383-2-scaled.jpg?fit=1363%2C912&amp;ssl=1 1500w"
-                sizes="460px"
-                srcSet="https://i2.wp.com/cadencearchitects.com/wp-content/uploads/2021/08/IMG_1383-2-scaled.jpg?resize=600%2C365&amp;ssl=1 300w, https://i2.wp.com/cadencearchitects.com/wp-content/uploads/2021/08/IMG_1383-2-scaled.jpg?resize=600%2C365&amp;ssl=1 500w, https://i2.wp.com/cadencearchitects.com/wp-content/uploads/2021/08/IMG_1383-2-scaled.jpg?resize=750%2C456&amp;ssl=1 750w, https://i2.wp.com/cadencearchitects.com/wp-content/uploads/2021/08/IMG_1383-2-scaled.jpg?fit=909%2C608&amp;ssl=1 1000w, https://i2.wp.com/cadencearchitects.com/wp-content/uploads/2021/08/IMG_1383-2-scaled.jpg?fit=1363%2C912&amp;ssl=1 1500w"
                 style={{
                   width: "100%",
+                  height: "450px",
                 }}
                 data-no-retina=""
                 alt={"Profile"}
+                src="/image.webp"
               />
             }
           />
@@ -86,13 +85,12 @@ const Office = () => {
                 alt="Awards"
                 style={{
                   width: "100%",
+                  height: "450px",
                 }}
                 data-wow-delay="0.1s"
                 data-sizes="auto"
-                data-srcset="https://i2.wp.com/cadencearchitects.com/wp-content/uploads/2021/05/photo-1553526665-dbfe3e8a6fcc-scaled.jpg?resize=600%2C365&amp;ssl=1 300w, https://i2.wp.com/cadencearchitects.com/wp-content/uploads/2021/05/photo-1553526665-dbfe3e8a6fcc-scaled.jpg?resize=600%2C365&amp;ssl=1 500w, https://i2.wp.com/cadencearchitects.com/wp-content/uploads/2021/05/photo-1553526665-dbfe3e8a6fcc-scaled.jpg?resize=750%2C456&amp;ssl=1 750w, https://i2.wp.com/cadencearchitects.com/wp-content/uploads/2021/05/photo-1553526665-dbfe3e8a6fcc-scaled.jpg?resize=600%2C365&amp;ssl=1 500w, https://i2.wp.com/cadencearchitects.com/wp-content/uploads/2021/05/photo-1553526665-dbfe3e8a6fcc-scaled.jpg?fit=912%2C608&amp;ssl=1 1000w, https://i2.wp.com/cadencearchitects.com/wp-content/uploads/2021/05/photo-1553526665-dbfe3e8a6fcc-scaled.jpg?resize=600%2C365&amp;ssl=1 500w, https://i2.wp.com/cadencearchitects.com/wp-content/uploads/2021/05/photo-1553526665-dbfe3e8a6fcc-scaled.jpg?fit=1368%2C912&amp;ssl=1 1500w"
                 data-no-retina=""
-                sizes="620px"
-                srcSet="https://i2.wp.com/cadencearchitects.com/wp-content/uploads/2021/05/photo-1553526665-dbfe3e8a6fcc-scaled.jpg?resize=600%2C365&amp;ssl=1 300w, https://i2.wp.com/cadencearchitects.com/wp-content/uploads/2021/05/photo-1553526665-dbfe3e8a6fcc-scaled.jpg?resize=600%2C365&amp;ssl=1 500w, https://i2.wp.com/cadencearchitects.com/wp-content/uploads/2021/05/photo-1553526665-dbfe3e8a6fcc-scaled.jpg?resize=750%2C456&amp;ssl=1 750w, https://i2.wp.com/cadencearchitects.com/wp-content/uploads/2021/05/photo-1553526665-dbfe3e8a6fcc-scaled.jpg?resize=600%2C365&amp;ssl=1 500w, https://i2.wp.com/cadencearchitects.com/wp-content/uploads/2021/05/photo-1553526665-dbfe3e8a6fcc-scaled.jpg?fit=912%2C608&amp;ssl=1 1000w, https://i2.wp.com/cadencearchitects.com/wp-content/uploads/2021/05/photo-1553526665-dbfe3e8a6fcc-scaled.jpg?resize=600%2C365&amp;ssl=1 500w, https://i2.wp.com/cadencearchitects.com/wp-content/uploads/2021/05/photo-1553526665-dbfe3e8a6fcc-scaled.jpg?fit=1368%2C912&amp;ssl=1 1500w"
+                src="/awards.webp"
               />
             }
           />
@@ -115,14 +113,14 @@ const Office = () => {
         </div>
         <div>
           {/* <button onClick={hanlde.enter}>Enter Full Screen</button> */}
-            <div>
-              <h1 className="text-lg text-black font-bold text-left">Awards</h1>
-              <ul className="awards-list space-y-4">
-                {awards.map((award, index) => {
-                  return <li key={index}>{award}</li>;
-                })}
-              </ul>
-            </div>
+          <div>
+            <h1 className="text-lg text-black font-bold text-left">Awards</h1>
+            <ul className="awards-list space-y-4">
+              {awards.map((award, index) => {
+                return <li key={index}>{award}</li>;
+              })}
+            </ul>
+          </div>
         </div>
         <div ref={PublicationsRef}>
           <ImageWithText
@@ -148,7 +146,7 @@ const Office = () => {
             return (
               <div
                 key={imageUrl}
-                className="images-column-container [flex:25%] p-5 space-y-6"
+                className="images-column-container [flex:20%] p-5 space-y-6"
               >
                 <img
                   src={imageUrl}
@@ -207,7 +205,6 @@ const Office = () => {
                 alt="Events/Exhibitions"
                 data-wow-delay="0.1s"
                 data-sizes="auto"
-                data-srcset="https://i2.wp.com/cadencearchitects.com/wp-content/uploads/2021/07/ADL_5379-scaled.jpg?resize=600%2C365&amp;ssl=1 300w, https://i2.wp.com/cadencearchitects.com/wp-content/uploads/2021/07/ADL_5379-scaled.jpg?resize=600%2C365&amp;ssl=1 500w, https://i2.wp.com/cadencearchitects.com/wp-content/uploads/2021/07/ADL_5379-scaled.jpg?resize=750%2C456&amp;ssl=1 750w, https://i2.wp.com/cadencearchitects.com/wp-content/uploads/2021/07/ADL_5379-scaled.jpg?resize=600%2C365&amp;ssl=1 500w, https://i2.wp.com/cadencearchitects.com/wp-content/uploads/2021/07/ADL_5379-scaled.jpg?fit=912%2C608&amp;ssl=1 1000w, https://i2.wp.com/cadencearchitects.com/wp-content/uploads/2021/07/ADL_5379-scaled.jpg?resize=600%2C365&amp;ssl=1 500w, https://i2.wp.com/cadencearchitects.com/wp-content/uploads/2021/07/ADL_5379-scaled.jpg?fit=1368%2C912&amp;ssl=1 1500w"
                 data-no-retina=""
                 style={{
                   width: "100%",
@@ -224,7 +221,7 @@ const Office = () => {
               return (
                 <div
                   key={imageUrl}
-                  className="images-column-container [flex:25%] p-5 space-y-6"
+                  className="images-column-container [flex:33.33%] p-5 space-y-6"
                 >
                   <img
                     src={imageUrl}

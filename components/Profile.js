@@ -1,7 +1,7 @@
 const Profile = ({ name, image, alt, role, socialIcons }) => {
   return (
     <div className="profile flex-[33.33%]">
-      <div className="profile-image">
+      <div className="profile-image flex justify-center">
         <img src={image} alt={alt} />
       </div>
       <div className="profile-info flex flex-col justify-center items-center mt-2 space-y-3">
@@ -13,10 +13,14 @@ const Profile = ({ name, image, alt, role, socialIcons }) => {
               return;
             }
             return (
-              <div key={icon.url} className=''>
+              <div key={icon.url} className="">
                 <a
                   key={index}
-                  href={icon.url.includes('@cadencearchitects') ?  `mailto:${icon.url}` : icon.url}
+                  href={
+                    icon.url.includes("@cadencearchitects")
+                      ? `mailto:${icon.url}`
+                      : icon.url
+                  }
                   target="_blank"
                   rel="noopener noreferrer"
                 >
