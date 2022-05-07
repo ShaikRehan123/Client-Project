@@ -252,18 +252,6 @@ input[type="checkbox"] {
     /*flex: 100%;*/
 }
 
-.images-img-25 {
-    flex: 25% !important;
-}
-
-.images-img-50 {
-    flex: 50% !important;
-}
-
-.images-img-75 {
-    flex: 33.33% !important;
-}
-
 .text-on-top-of-image {
     position: relative;
     text-align: center;
@@ -286,3 +274,10 @@ input[type="checkbox"] {
     background-color: #f1f1f1;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.awards-list{
+    column-count: 3;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+}
+
+.awards-list li:before {content: '● ';font-size: 10px;}
